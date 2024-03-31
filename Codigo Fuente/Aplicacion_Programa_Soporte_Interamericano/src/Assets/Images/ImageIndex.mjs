@@ -1,3 +1,4 @@
+import {require} from '../../../node_modules/browseify/index.js';
 const ImageIndex =  {
     student1: require('./dabautistac.jpg'),
     student2: require('./vmbautistac.png'),
