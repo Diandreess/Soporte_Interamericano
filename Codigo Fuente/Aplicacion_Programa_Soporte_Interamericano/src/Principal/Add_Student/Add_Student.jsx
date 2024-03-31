@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import StudentInfo from './StudentInfo'
 import ValidMessage from './ValidMessage'
-import Images from '../assets/images/ImageIndex.js'
+import Images from '.../Assets/Images/IndexImage.js'
 
 export class Add_Student extends Component {
 
