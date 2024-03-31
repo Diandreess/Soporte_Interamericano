@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import ValidStudent from './ValidStudent'
+import StudentInfo from './StudentInfo'
 import ValidMessage from './ValidMessage'
 import Images from '../assets/images/ImageIndex.js'
 
-export class AddStudentPage extends Component {
+export class Add_Student extends Component {
 
     constructor(props) {
         super(props)
@@ -127,7 +127,7 @@ export class AddStudentPage extends Component {
                 </div>
                 <div id='information' className='container'>
                     {messageValidate && <ValidMessage valid={loadComponent} />}
-                    {loadComponent && <ValidStudent actualStudent={actualStudent} />}
+                    {loadComponent && <StudentInfo actualStudent={actualStudent} />}
                 </div>
                 <div id='create' className='container'>
                     <button id='createButtonID' className='btn btn-primary' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={this.handleCreateStudent} disabled={createButtonState}>Create</button>
@@ -154,4 +154,4 @@ export class AddStudentPage extends Component {
     }
 }
 
-export default AddStudentPage
+export default Add_Student
