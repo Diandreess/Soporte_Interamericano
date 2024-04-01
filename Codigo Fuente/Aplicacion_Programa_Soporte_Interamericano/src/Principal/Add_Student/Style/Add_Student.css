@@ -1,0 +1,29 @@
+.justify-self-end{
+    justify-self: end;
+}
+
+@font-face {
+    font-family: monserrat;
+    src: url(../../../Assets/Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: gotham;
+    src: url(../../../Assets/Fonts/Gotham-Bold.otf);
+}
+
+p {
+    font-family: monserrat;
+}
+
+h1, h2 {
+    font-family: gotham;
+}
+
+.btn-success {
+    background-color: #3EB068;
+}
+
+.btn-primary {
+    background-color: #05899C;
+}
