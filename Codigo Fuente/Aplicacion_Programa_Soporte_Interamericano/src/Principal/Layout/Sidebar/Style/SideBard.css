@@ -78,7 +78,7 @@ body {
 }
 
 #sidebar:not(.expand) .sidebar-logo,
-#sidebar:not(.expand) a.sidebar-link span {
+#sidebar:not(.expand) .sidebar-link span {
     display: none;
 }
 
@@ -87,7 +87,7 @@ body {
     flex: 1 1 auto;
 }
 
-a.sidebar-link, .sidebar-title {
+.sidebar-link {
     padding: .625rem 1.625rem;
     color: black;
     display: block;
@@ -96,7 +96,7 @@ a.sidebar-link, .sidebar-title {
     border-left: 3px solid transparent;
 }
 
-.sidebar-link i ,.sidebar-title i {
+.sidebar-link i {
     font-size: 1.1rem;
     margin-right: .75rem;
 }
@@ -140,7 +140,7 @@ a.sidebar-link:hover {
     transition: all .2s ease-out;
 }
 
-#sidebar.expand  .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
