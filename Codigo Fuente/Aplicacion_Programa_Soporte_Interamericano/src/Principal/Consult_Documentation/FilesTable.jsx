@@ -1,0 +1,28 @@
+import React from 'react'
+
+const FilesTable = (props) => {
+    return (
+        <table className="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">File Name</th>
+                    <th scope="col">Objective</th>
+                    <th scope="col">Upload Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    props.documentList.map(document => (
+                        <tr>
+                            <td key={document.fileID + '-' + document.fileName}><a href='#'>{document.fileName}</a></td>
+                            <td key={document.fileID + '-' + document.objectiveID}>{document.objectiveID}</td>
+                            <td key={document.fileID + '-' + document.uploadDate}>{document.uploadDate}</td>
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+    )
+}
+
+export default FilesTable
