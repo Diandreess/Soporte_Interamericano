@@ -48,15 +48,6 @@ export const SideBard = ()=>{
                 </li>
                 <hr/>
             </ul>
-            
-            
-
-            <div className="sidebar-footer">
-                <Link to="#" className="sidebar-link">
-                    <i className="lni lni-exit"></i>
-                    <span>Logout</span>
-                </Link>
-            </div>
         </aside>
     </div>
         )
