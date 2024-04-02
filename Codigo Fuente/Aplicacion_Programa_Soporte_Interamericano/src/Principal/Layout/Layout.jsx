@@ -18,9 +18,9 @@ function Layout() {
     </div>
     <div className='container'>
  <Routes>
-    <Route path='/' element={<Consult_Documentation/>}/>
-    <Route path="/Upload_Documentation" element={<Upload_Documentation/>}/>
-    <Route path="/Add_Student" element={<Add_Student/>}/>
+    <Route path='Principal.html' element={<Consult_Documentation/>}/>
+    <Route path="Principal.html/Upload_Documentation" element={<Upload_Documentation/>}/>
+    <Route path="Principal.html/Add_Student" element={<Add_Student/>}/>
 </Routes> 
     </div>
   </div>
