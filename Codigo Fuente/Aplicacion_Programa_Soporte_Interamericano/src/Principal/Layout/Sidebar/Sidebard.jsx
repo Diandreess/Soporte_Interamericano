@@ -13,12 +13,13 @@ export const SideBard = ()=>{
                 </button>
             </div>
             <ul className="sidebar-nav">
+            <hr/>
             <li className='sidebar-item '>
-                <span className='sidebar-title'>
+                <div className='sidebar-link'>
                 <i className='lni lni-pencil-alt'></i> 
-                Students </span>
+                <span>Students</span>
+                 </div>
             </li>
-                <hr/>
                 <li className="sidebar-item ">
                     <Link to="/" className="sidebar-link">
                         <i className="lni lni-consulting"></i>
@@ -31,12 +32,13 @@ export const SideBard = ()=>{
                         <span>Upload Documentation</span>
                     </Link>
                 </li>
-                <li className='sidebar-item '>
-                <span className='sidebar-title'>
-                <i className='lni lni-pencil-alt '></i> 
-                Administration </span>
-                </li>
                 <hr/>
+                <li className='sidebar-item mt-4'>
+                <div className='sidebar-link'>
+                <i className='lni lni-pencil-alt '></i> 
+                <span>Administration</span>
+                 </div>
+                </li>
                 <li className="sidebar-item">
                     <Link to="/Add_Student" className="sidebar-link">
                         <i className="lni lni-circle-plus"></i>
@@ -44,6 +46,7 @@ export const SideBard = ()=>{
                     </Link>
 
                 </li>
+                <hr/>
             </ul>
             
             
