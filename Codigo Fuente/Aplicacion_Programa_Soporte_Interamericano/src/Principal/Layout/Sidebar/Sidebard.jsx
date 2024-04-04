@@ -21,7 +21,7 @@ export const SideBard = ()=>{
                  </div>
             </li>
                 <li className="sidebar-item ">
-                    <Link to="/Consult_Documentation" className="sidebar-link">
+                    <Link to="/" className="sidebar-link">
                         <i className="lni lni-consulting"></i>
                         <span>Consult Documentation</span>
                     </Link>
