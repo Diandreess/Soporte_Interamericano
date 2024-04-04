@@ -1,8 +1,8 @@
 import React from 'react'
-
 const FilesTable = (props) => {
     return (
-        <table className="table table-hover">
+        <div className='ContenedorTabla TablaResponsiva EncabezadoTabla'>
+            <table className="table">
             <thead>
                 <tr>
                     <th scope="col">File Name</th>
@@ -22,6 +22,7 @@ const FilesTable = (props) => {
                 }
             </tbody>
         </table>
+        </div>
     )
 }
 

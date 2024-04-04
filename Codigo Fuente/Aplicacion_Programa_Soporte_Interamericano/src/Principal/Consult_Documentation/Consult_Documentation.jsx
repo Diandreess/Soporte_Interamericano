@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import SelectObjectives from './SelectObjectives'
+import InitialTable from './InitialTable'
 import FilesTable from './FilesTable'
 import studentC1 from '../../Assets/Images/dabautistac.jpg'
 import studentC2 from '../../Assets/Images/vmbautistac.png'
@@ -8,6 +9,7 @@ import studentC4 from '../../Assets/Images/jmmarroquinr.png'
 import studentC5 from '../../Assets/Images/pcpisquiyp.png'
 import StudentDisplay from './StudentDisplay'
 import ValidMessage from './ValidMessage'
+import './Style/Style.css'
 
 const Consult_Documentation = () => {
   const [student, setStudent] = useState(
@@ -217,18 +219,27 @@ const Consult_Documentation = () => {
     <div id='ConsultDocumentationPage' className='ConsultDocumentation md-container' data-bs-spy="scroll" data-bs-smooth-scroll="true">
       <h1 className='display-6'>Consult Documentation</h1>
       <div id='data' className='container'>
-        <p>Student email <small>*</small></p>
-        <input id='studentEmailID' type='text' value={searchInformation.studentEmail} className='form-control' onChange={handleStudentEmailInput}></input>
-        <p>Objective</p>
+        <div className='row'>
+          <div className='col'>
+          <p>Student email <small className='text-danger'>*</small></p>
+        <input id='studentEmailID' type='text' value={searchInformation.studentEmail} className='form-control' onChange={handleStudentEmailInput}/>
+          </div>
+          <div className='col'>
+          <p>Objective</p>
         <SelectObjectives changeMethod={handleSelectObjective} objectiveList={objectives} />
-        <button id='searchButtonID' type='button' className='btn btn-success' disabled={disableSearchButton} onClick={handleSearchClick}>Search</button>
+          </div>
+          <div className='col ContenedorBtn'>
+          <button id='searchButtonID' type='button' className='btn btn-success' disabled={disableSearchButton} onClick={handleSearchClick}>Search</button>
+          </div>
+        </div>
       </div>
       <div id='studentInfo' className='container'>
         {validStudent && <ValidMessage valid={renderFiles} />}
         {renderFiles && <StudentDisplay student={student} />}
       </div>
       <div id='files' className='container'>
-        {renderFiles && <FilesTable documentList={studentDocuments} />}
+      {renderFiles? <FilesTable documentList={studentDocuments} />: <InitialTable/>}
+     
       </div>
     </div>
   )
