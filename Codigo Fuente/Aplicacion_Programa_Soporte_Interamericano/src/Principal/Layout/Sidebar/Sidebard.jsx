@@ -16,7 +16,7 @@ export const SideBard = ()=>{
             <hr/>
             <li className='sidebar-item '>
                 <div className='sidebar-link'>
-                <i className='lni lni-pencil-alt'></i> 
+                <i className='lni lni-pencil-alt fa-7x'></i> 
                 <span>Students</span>
                  </div>
             </li>
