@@ -15,7 +15,7 @@ export const SideBard = ()=>{
             <ul className="sidebar-nav">
             <hr/>
             <li className='sidebar-item '>
-                <div className='sidebar-link'>
+                <div className='sidebar-link sidebar_Title'>
                 <i className='lni lni-pencil-alt'></i> 
                 <span>Students</span>
                  </div>
@@ -34,8 +34,8 @@ export const SideBard = ()=>{
                 </li>
                 <hr/>
                 <li className='sidebar-item mt-4'>
-                <div className='sidebar-link'>
-                <i className='lni lni-pencil-alt '></i> 
+                <div className='sidebar-link sidebar_Title'>
+                <i className='lni  lni-control-panel'></i> 
                 <span>Administration</span>
                  </div>
                 </li>
@@ -43,6 +43,13 @@ export const SideBard = ()=>{
                     <Link to="/Add_Student" className="sidebar-link">
                         <i className="lni lni-circle-plus"></i>
                         <span>Add Student</span>
+                    </Link>
+
+                </li>
+                <li className="sidebar-item">
+                    <Link to="#" className="sidebar-link">
+                        <i className="lni lni-users"></i>
+                        <span>Add User</span>
                     </Link>
 
                 </li>

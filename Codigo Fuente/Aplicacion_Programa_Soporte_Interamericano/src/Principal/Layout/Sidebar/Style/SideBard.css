@@ -144,3 +144,9 @@ a.sidebar-link:hover {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+.sidebar_Title{
+    font-weight: bold;
+    color: black;
+    font-size: 1.25rem;
+
+}
