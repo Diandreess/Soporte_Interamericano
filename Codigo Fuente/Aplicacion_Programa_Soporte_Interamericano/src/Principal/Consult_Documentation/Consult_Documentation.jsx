@@ -11,6 +11,7 @@ import StudentDisplay from './StudentDisplay'
 import ValidMessage from './ValidMessage'
 import './Style/Style.css'
 
+
 const Consult_Documentation = () => {
   const [student, setStudent] = useState(
     {
