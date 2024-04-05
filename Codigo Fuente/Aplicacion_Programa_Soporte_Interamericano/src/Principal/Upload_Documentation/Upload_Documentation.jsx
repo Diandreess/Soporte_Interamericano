@@ -181,12 +181,12 @@ const Upload_Documentation = () => {
                 />
                 <button
                   onClick={() => handleVerify(email)}
-                  className="btn btn-success  "
+                  className="btn btn-success  mx-4"
                 >
                   Validate
                 </button>
               </div>
-              <div className='col'>
+              <div className='mt-4'>
           <p>Objective</p>
             <SelectObjectives changeMethod={handleSelectObjective} objectiveList={objectives} />
           </div>
