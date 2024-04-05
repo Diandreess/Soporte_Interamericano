@@ -12,7 +12,7 @@ const StudentInfo = (props) => {
                     {props.element.name} </p>
                 </div>
                 <div className='mt-3 mb-3'>
-                    <img src={props.element.image} alt={props.element.name} width="200" height="200"/>
+                    <img src={props.element.image} alt={props.element.name} width="100" height="100"/>
                 </div>
             </div>
     </div>
