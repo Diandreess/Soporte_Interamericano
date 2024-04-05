@@ -14,7 +14,7 @@ const FilesTable = (props) => {
                 {
                     props.documentList.map(document => (
                         <tr>
-                            <td key={document.fileID + '-' + document.fileName}><a href='#'>{document.fileName}</a></td>
+                            <td key={document.fileID + '-' + document.fileName}><a href={document.URL} target="_blank" rel="noopener noreferrer">{document.fileName}</a></td>
                             <td key={document.fileID + '-' + document.objectiveID}>{document.objectiveID}</td>
                             <td key={document.fileID + '-' + document.uploadDate}>{document.uploadDate}</td>
                         </tr>

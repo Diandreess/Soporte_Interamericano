@@ -114,7 +114,7 @@ const Consult_Documentation = () => {
       studentID: 1,
       fileName: 'Evaluation of analysis and reading comprehension objectives.xlsx',
       objectiveID: 1,
-      URL: 'Drive1',
+      URL: 'https://docs.google.com/spreadsheets/d/1TFvXsMEKQmyNQ8gc6_9m2XAnCqz6nZpNBadeqmUiNtM/edit?usp=sharing',
       uploadDate: '03/03/2024'
     },
     {
@@ -122,7 +122,7 @@ const Consult_Documentation = () => {
       studentID: 1,
       fileName: 'Psychometric evaluation year 2022.pdf',
       objectiveID: 1,
-      URL: 'Drive2',
+      URL: 'https://drive.google.com/file/d/1ofyaXFzX4jjtsRP0BfxDbjxuY7rRl8Dr/view?usp=sharing',
       uploadDate: '01/10/2022'
     },
     {
@@ -130,7 +130,7 @@ const Consult_Documentation = () => {
       studentID: 1,
       fileName: 'Math exam.pdf',
       objectiveID: 5,
-      URL: 'Drive3',
+      URL: 'https://drive.google.com/file/d/1ofyaXFzX4jjtsRP0BfxDbjxuY7rRl8Dr/view?usp=sharing',
       uploadDate: '01/10/2022'
     },
     {
@@ -138,7 +138,7 @@ const Consult_Documentation = () => {
       studentID: 5,
       fileName: 'Build skills.pdf',
       objectiveID: 1,
-      URL: 'Drive4',
+      URL: 'https://drive.google.com/file/d/1ofyaXFzX4jjtsRP0BfxDbjxuY7rRl8Dr/view?usp=sharing',
       uploadDate: '01/10/2022'
     },
     {
@@ -146,7 +146,7 @@ const Consult_Documentation = () => {
       studentID: 5,
       fileName: 'Reading evaluation.pdf',
       objectiveID: 5,
-      URL: 'Drive5',
+      URL: 'https://drive.google.com/file/d/1ofyaXFzX4jjtsRP0BfxDbjxuY7rRl8Dr/view?usp=sharing',
       uploadDate: '01/10/2022'
     }
   ])
@@ -203,7 +203,8 @@ const Consult_Documentation = () => {
             fileID: document.fileID,
             fileName: document.fileName,
             objectiveID: o.name,
-            uploadDate: document.uploadDate
+            uploadDate: document.uploadDate,
+            URL: document.URL
           })
         }
       })

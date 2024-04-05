@@ -20,7 +20,7 @@ export const SideBard = ()=>{
                 <span>Students</span>
                  </div>
             </li>
-                <li className="sidebar-item ">
+                <li className="sidebar-item">
                     <Link to="/" className="sidebar-link">
                         <i className="lni lni-consulting"></i>
                         <span>Consult Documentation</span>
@@ -44,14 +44,12 @@ export const SideBard = ()=>{
                         <i className="lni lni-circle-plus"></i>
                         <span>Add Student</span>
                     </Link>
-
                 </li>
                 <li className="sidebar-item">
                     <Link to="#" className="sidebar-link">
                         <i className="lni lni-users"></i>
                         <span>Add User</span>
                     </Link>
-
                 </li>
                 <hr/>
             </ul>
