@@ -152,7 +152,7 @@ const Upload_Documentation = () => {
     } else {
       setValidStudent(false);
       setLoadStudentInformation(false);
-      alert("NEL");
+      alert("Estudiante invalido");
     }
   };
   const handleSelectObjective = (event) => {
@@ -202,6 +202,9 @@ const Upload_Documentation = () => {
               <input type="file" class="form-control" multiple="" />
             </div>
           </form>
+        <div className="d-flex justify-content-center align-items-center pt-5">
+        <button className="btn btn-success" onClick={handdleClick}> Upload Document</button>
+        </div>
         </div>
   );
 };
