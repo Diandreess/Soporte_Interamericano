@@ -203,7 +203,7 @@ const Upload_Documentation = () => {
             </div>
           </form>
         <div className="d-flex justify-content-center align-items-center pt-5">
-        <button className="btn btn-success" onClick={handdleClick}> Upload Document</button>
+        <button className="btn btn-success" > Upload Document</button>
         </div>
         </div>
   );
