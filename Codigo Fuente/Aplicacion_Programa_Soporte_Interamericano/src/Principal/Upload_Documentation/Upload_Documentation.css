@@ -77,3 +77,6 @@
   .dropdown-content a:hover {
     background-color: #f1f1f1;
   }
+.contenedor{
+  width: 100vw;
+}
