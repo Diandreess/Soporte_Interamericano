@@ -127,8 +127,8 @@ export class Add_Student extends Component {
                     <div className='d-flex justify-content-center align-items-end'>
                         <div className='form-group'>
                             <p>
-                                Estudent email
-                                <small className='text-danger'>*</small>
+                                Estudent email 
+                                <small className='text-danger'> *</small>
                             </p>
                             <input id='studentEmailID' type='text' className='form-control' placeholder='Enter an email' value={studentemail} onChange={this.handleStudentEmail} />
                         </div>
